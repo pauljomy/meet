@@ -8,21 +8,24 @@
   <body class="font-family-default">
     <img src="/src/assets/logo.svg" alt="Logo" class="mx-auto mt-12 my-16" />
 
-    <div>
-      <div class="flex overflow-hidden gap-4 mb-12 md:gap-8">
+    <div class="flex flex-col justify-center">
+      <div
+        class="grid grid-cols-2 gap-y-12 xl:grid-cols-3 justify-items-center"
+      >
         <img
           src="/src/assets/desktop/image-hero-left.png"
           alt="Hero Image Left"
-          class="w-1/2 object-cover"
+          class="xl:order-1 self-center justify-center"
         />
         <img
           src="/src/assets/desktop/image-hero-right.png"
           alt="Hero Image Right"
-          class="w-1/2 object-cover"
+          class="xl:order-3 self-center justify-center"
         />
-      </div>
-      <div class="mx-8 text-center">
-        <div class="max-w-md mx-auto">
+
+        <div
+          class="text-center col-span-2 xl:order-2 xl:col-span-1 max-w-md mx-12"
+        >
           <h1
             class="text-[2.5rem] font-black text-h1 leading-11 text-center tracking-normal mb-6"
           >
@@ -45,6 +48,9 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <div class="mx-8 text-center">
         <div class="flex items-center flex-col">
           <div class="w-px h-20 bg-gray-300"></div>
 
@@ -106,30 +112,30 @@
           </div>
         </div>
       </div>
-      <footer
-        class="text-center bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover -mt-6 mx-auto md:bg-[url('/src/assets/tablet/image-footer.jpg')] xl:bg-[url('/src/assets/desktop/image-footer.jpg')]"
-      >
-        <div class="px-8 py-16 bg-btn1/80">
-          <div
-            class="xl:flex xl:flex-1 xl:justify-between max-w-280 mx-auto xl:gap-30"
-          >
-            <h2
-              class="text-[2rem] leading-9 font-black mb-6 text-white xl:text-left xl:mb-0"
-            >
-              Experience more together
-            </h2>
-            <p class="mb-6 text-white xl:text-left xl:mb-0">
-              Stay connected with reliable HD meetings and unlimited one-on-one
-              and group video sessions.
-            </p>
-            <button
-              class="mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-4 xl:self-center xl:flex"
-            >
-              Download <span class="text-btn2-v2">v1.3</span>
-            </button>
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer
+      class="text-center bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover -mt-6 mx-auto md:bg-[url('/src/assets/tablet/image-footer.jpg')] xl:bg-[url('/src/assets/desktop/image-footer.jpg')]"
+    >
+      <div class="px-8 py-16 bg-btn1/80">
+        <div
+          class="xl:flex xl:flex-1 xl:justify-between max-w-280 mx-auto xl:gap-30"
+        >
+          <h2
+            class="text-[2rem] leading-9 font-black mb-6 text-white xl:text-left xl:mb-0"
+          >
+            Experience more together
+          </h2>
+          <p class="mb-6 text-white xl:text-left xl:mb-0">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button
+            class="mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-4 xl:self-center xl:flex"
+          >
+            Download <span class="text-btn2-v2">v1.3</span>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

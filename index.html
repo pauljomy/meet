@@ -6,7 +6,7 @@
         <link href="/src/style.css" rel="stylesheet" />
     </head>
 
-    <body class="font-family-default">
+    <body class="font-family-default flex flex-col justify-center max-h-full">
         <img
             src="/src/assets/logo.svg"
             alt="Logo"
@@ -44,12 +44,12 @@
                         class="md:flex md:mb-39 md:gap-4 justify-center xl:mb-0"
                     >
                         <button
-                            class="xs:mx-auto px-10 py-4 bg-btn1 rounded-full text-white font-bold mb-4 md:mb-0"
+                            class="xs:mx-auto px-10 py-4 bg-btn1 rounded-full text-white font-bold mb-4 md:mb-0 hover:bg-hover-btn1"
                         >
                             Download <span class="text-btn1-v1">v1.3</span>
                         </button>
                         <button
-                            class="xs:mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-16 md:mb-0"
+                            class="xs:mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-16 md:mb-0 hover:bg-hover-btn2"
                         >
                             What is it?
                         </button>
@@ -110,7 +110,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex justify-center flex-col items-center">
+                <div
+                    class="flex justify-center flex-col items-center relative z-0"
+                >
                     <div class="w-px h-20 bg-gray-300"></div>
                     <div
                         class="border w-12 h-12 rounded-full items-center flex justify-center bg-white border-gray-300 text-gray-500 font-bold"
@@ -121,11 +123,11 @@
             </div>
         </div>
         <footer
-            class="text-center bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover -mt-6 mx-auto md:bg-[url('/src/assets/tablet/image-footer.jpg')] xl:bg-[url('/src/assets/desktop/image-footer.jpg')]"
+            class="text-center bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover -mt-6 mx-auto md:bg-[url('/src/assets/tablet/image-footer.jpg')] xl:bg-[url('/src/assets/desktop/image-footer.jpg')] w-full"
         >
             <div class="px-8 py-16 bg-btn1/80">
                 <div
-                    class="xl:flex xl:flex-1 xl:justify-between max-w-280 mx-auto xl:gap-30"
+                    class="xl:flex xl:flex-1 xl:justify-between max-w-280 mx-auto xl:gap-30 md:w-126 xl:w-280"
                 >
                     <h2
                         class="text-[2rem] leading-9 font-black mb-6 text-white xl:text-left xl:mb-0"
@@ -137,7 +139,7 @@
                         one-on-one and group video sessions.
                     </p>
                     <button
-                        class="mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-4 xl:self-center xl:flex"
+                        class="mx-auto px-10 py-4 bg-btn2 rounded-full text-white font-bold mb-4 xl:self-center xl:flex hover:bg-hover-btn2"
                     >
                         Download <span class="text-btn2-v2">v1.3</span>
                     </button>
